@@ -1,8 +1,9 @@
 <?php
 
-namespace app\ianmh\helpers;
+namespace app\ariad\helpers;
 
-class FormHelper {
+class Form 
+{
 
 	/**
 	 * Gets currently assign values to a multi form element
@@ -11,7 +12,6 @@ class FormHelper {
 	{
 		if(is_null($model))
 			return array();
-		
 		$assignedValues = array();
 		foreach ($model as $value)
 		{
@@ -43,5 +43,4 @@ class FormHelper {
 				$model->$methodName()->detach($id);
 		}
 	}
-
 }
